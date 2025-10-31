@@ -2,6 +2,23 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Vite Dev Server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "cd \"abcode neww\" && npm run dev",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "Launch Chrome Debugger",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3001",
+      "webRoot": "${workspaceFolder}/abcode neww",
+      "preLaunchTask": "Start Dev Server"
+    },
+    {
       "name": "Run ABCode Extension",
       "type": "extensionHost",
       "request": "launch",
