@@ -5,7 +5,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   const disposable = vscode.workspace.onDidSaveTextDocument((document) => {
     if (document.languageId === "python") {
-      const dashboardUrl = "http://localhost:3000/"; // your Vite UI
+      const dashboardUrl = "http://localhost:3001/"; // your Vite UI
       vscode.env.openExternal(vscode.Uri.parse(dashboardUrl));
       console.log("🐍 Python file saved → Opened ABCode Dashboard");
     }

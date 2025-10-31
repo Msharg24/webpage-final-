@@ -11,7 +11,8 @@
       ],
       "outFiles": [
         "${workspaceFolder}/abcode-extension/out/**/*.js"
-      ]
+      ],
+      "preLaunchTask": "npm: compile - abcode-extension"
     }
   ]
 }
